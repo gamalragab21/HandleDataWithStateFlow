@@ -16,7 +16,7 @@ class HomeViewModel : ViewModel() {
 
     private val repository=TestRepository("Work Done")
 
-    // TODO: 11/8/2021 Simple way to show how to handle repo with view model by using livedata
+    // TODO: 11/8/2021 Simple way to show how to handle repo with view model by using StateFlow
     private val _textStatus= MutableStateFlow<Event<Resource<String>>>(Event(Resource.Loading()))
     val textStatus: MutableStateFlow<Event<Resource<String>>> =_textStatus
 
